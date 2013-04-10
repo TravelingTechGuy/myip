@@ -1,0 +1,17 @@
+{
+  "name": "myip",
+  "version": "0.1.0",
+  "description": "Get IP and location information from client IP",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "ip",
+    "location",
+    "geolocation"
+  ],
+  "author": "Guy Vider",
+  "license": "BSD"
+}
