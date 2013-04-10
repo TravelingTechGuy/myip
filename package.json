@@ -1,7 +1,7 @@
 {
   "name": "myip",
   "version": "0.1.0",
-  "description": "Get IP and location information from client IP",
+  "description": "Return IP and location information from client IP, using ipdbinfo database",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
