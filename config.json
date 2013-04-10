@@ -1,5 +1,4 @@
 {
-	"port": 8080,
 	"apiKey": "e1de365e4c27ecfb15d3895541f940a8cb6a57fe40523418014a6fe3d092335d",
 	"url": "http://api.ipinfodb.com/v2/ip_query.php"
 }

@@ -1,12 +1,14 @@
 var http = require('http');
 var config = require('./config');
+var port = process.env.PORT || 8080;
 
 http.createServer(function (req, res) {
 	var ip = req.headers["remote-addr"] || "127.0.0.1";
+
 	getIPInfo(ip, res, printResult);
   	
-}).listen(config.port, function() {
-	console.log('Listening on port ' + config.port);
+}).listen(port, function() {
+	console.log('Listening on port ' + port);
 });
 
 var printResult = function(res, data) {
