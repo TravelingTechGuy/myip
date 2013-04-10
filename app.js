@@ -4,7 +4,7 @@ var port = process.env.PORT || 8080;
 
 http.createServer(function (req, res) {
 	var ip = req.headers["remote-addr"] || "127.0.0.1";
-
+	console.log(JSON.stringify(req.headers));
 	getIPInfo(ip, res, printResult);
   	
 }).listen(port, function() {
