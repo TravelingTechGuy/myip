@@ -1,4 +1,4 @@
 {
-	"apiKey": "e1de365e4c27ecfb15d3895541f940a8cb6a57fe40523418014a6fe3d092335d",
+	"apiKey": "<insert your ipinfodb API key here>",
 	"url": "http://api.ipinfodb.com/v2/ip_query.php"
 }
