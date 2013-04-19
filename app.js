@@ -3,6 +3,10 @@ var config = require('./config');
 var port = process.env.PORT || 8080;
 
 http.createServer(function (req, res) {
+	//avoid double call if it's a browser call for favicon
+	if(req.url.indexOf('favicon') != -1)
+		return;
+	
 	var ip = req.headers["remote-addr"] || req.headers["x-forwarded-for"];
 	if(ip) {
 		getIPInfo(ip, function(data) {
