@@ -15,6 +15,6 @@ You can test a running version at [http://MyIP.TravelingTechGuy.com](http://myip
 
 Or, you can check out the Chrome extension that uses the service to show the info in the Chrome browser.
  - Find the repository here [https://github.com/TravelingTechGuy/myipextension](https://github.com/TravelingTechGuy/myipextension) 
- - Download from the [Chrome app store](https://chrome.google.com/webstore).
+ - Download from the [Chrome app store](https://chrome.google.com/webstore/detail/my-ip/lejbibljgiojigkpkhmdgdhmiaddgidd?hl=en-US&gl=US).
 
 Created by **Guy Vider** [http://www.TravelingTechGuy.com](http://www.TravelingTechGuy.com)
