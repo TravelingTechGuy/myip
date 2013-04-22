@@ -1,7 +1,7 @@
 MyIP - geolocate by IP
 ----------------------
 
-This little app shows your external IP and then uses uses the [IPInfoDB API](http://ipinfodb.com/) to provide geolocation data, based on that IP.
+This little app shows your external IP and then uses uses the [IPInfoDB](http://ipinfodb.com/) API to provide geolocation data, based on that IP.
 Currently, results are offered in JSON format only.
 
 Motivation
@@ -11,6 +11,12 @@ I wrote a version of this in PHP, that still works great, but I wanted to try a 
 
 Usage
 -----
+ + Clone the repo (if you're here, you know how to do that :))
+ + Go to [IPInfoDB API](http://ipinfodb.com/register.php) and register for the free API key
+ + Paste the API key into the [config.json](https://github.com/TravelingTechGuy/myip/blob/github/config.json) file
+ + Run the app using `node app` - tested on node 0.10 and higher
+
+
 You can test a running version at [http://MyIP.TravelingTechGuy.com](http://myip.travelingtechguy.com/) (hosted on Heroku).
 
 Or, you can check out the Chrome extension that uses the service to show the info in the Chrome browser.
