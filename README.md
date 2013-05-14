@@ -7,7 +7,8 @@ Currently, results are offered in JSON format only.
 Motivation
 ----------
 I'm on the road quite a lot, and many times I need to know my external IP. Oftentimes, it's good to know where web sites think I'm calling from.
-I wrote a version of this in PHP, that still works great, but I wanted to try a simple Node.js app. The idea was to try writing this as simple as possible, with no external modules or dependencies. After finishing the server side, I wrote a simple Chrome extension (see below) that consumes the JSON and shows it in a browser.
+I wrote a version of this in PHP, that still works great, but I wanted to try a simple Node.js app. The idea was to try writing this as simple as possible, with no external modules or dependencies. After finishing the server side, I wrote a simple Chrome extension (see below) that consumes the JSON and shows it in a browser.  
+Read the full story on [my blog](http://code.travelingtechguy.com/2013/04/whats-my-ip.html).
 
 Usage
 -----
