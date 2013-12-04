@@ -1,4 +1,4 @@
 {
 	"apiKey": "<insert your ipinfodb API key here>",
-	"url": "http://api.ipinfodb.com/v2/ip_query.php"
+	"url": "http://api.ipinfodb.com/v3/ip-city/"
 }

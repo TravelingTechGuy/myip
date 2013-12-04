@@ -27,14 +27,22 @@ var printResult = function(res, data, error) {
 	if(error) {
 		data = JSON.stringify({'error': error});
 	}
+	else {
+		console.log(data);
+		data = convertDataToOldFormat(data);
+	}
 	res.writeHead(200, {'Content-Type': 'application/json'});
-  	res.end(data);
+  	res.end(JSON.stringify(data));
+  	return data;
 };
 
 var getIPInfo = function(ip, callback) {
-	var url = config.url + '?key=' + config.apiKey + '&ip=' + ip + '&output=json&timezone=true';
+	var url = config.url + '?key=' + config.apiKey + '&ip=' + ip + '&format=json';
+	//console.log(url);
 	var req = http.request(url, function(response) {
-  		response.on('data', function (data) {
+  		response.on('data', function(data) {
+  			data = JSON.parse(data);
+  			//console.log(data);
 			callback(data, false);
 		});
 	});
@@ -53,3 +61,19 @@ var getIPInfo = function(ip, callback) {
 
 	req.end();
 };
+
+//ipdbinfo changed their returned data format at V3 - this will convert it back to V2 for the extension's sake 
+var convertDataToOldFormat = function(data) {
+	var convertedData = {
+		Ip: data.ipAddress,
+		CountryCode: data.countryCode,
+		CountryName: data.countryName,
+		RegionName: data.regionName,
+		City: data.cityName,
+		ZipPostalCode: data.zipCode,
+		Latitude: data.latitude,
+		Longitude: data.longitude,
+		Gmtoffset: data.timeZone
+	};
+	return convertedData;
+}
